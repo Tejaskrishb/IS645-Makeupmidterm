@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Expense Traker</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+      <script>
+        function valid(){
+            
+            var a=document.getElementById("amount");
+            if(a.value % 1!=0){
+                alert("Enter valid integer number");
+            }
+        }
+      </script>
+    
+  </head>
+  <body>
+    <h2>Expense Tracker System</h2>
+    <div class="container">
+      <h4>Your balance</h4>
+      <h1 id="balance">0.0</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>income</h4>
+          <p id="money-plus" class="money plus">+0.00</p>
+        </div>
+        <div>
+          <h4>expense</h4>
+          <p id="money-minus" class="money minus">-0.00</p>
+        </div>
+      </div>
+      <h3>History</h3>
+      <ul id="list" class="list">
+      </ul>
+      <h3>Add New Transation</h3>
+    
+    <span id="errorMsg"></span>
+      <form action="" id="form">
+        <div class="form-control">
+          <label>Enter Expense Name:</label>
+          <input type="text" id="text" placeholder="Please enter the name of your expenses..." />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Enter Amount:</label
+          >
+          <input
+            type="number"
+            id="amount" 
+            placeholder="Please enter the amount you want to add..." required
+          />
+            
+        </div>
+        <button class="btn" >Add transation</button>
+      </form>
+    </div>
+
+    <script src="q1.js" async defer></script>
+  </body>
+</html>
